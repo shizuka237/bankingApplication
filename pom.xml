@@ -44,7 +44,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>src.bankingApp.main.java.MainTests</mainClass>
+                            <mainClass>MainTests</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

@@ -16,7 +16,8 @@ Abstract class to represent a bank account
  */
 public abstract class BankAccount {
 
-    private static AtomicInteger globalAccounts = new AtomicInteger(0);;
+    private static AtomicInteger globalAccounts = new AtomicInteger(0);
+
     final private String accountNumber;//final because account no cannot change once set, it is its unique identifier
     private double minimumBalance;
     private double currentBalance;

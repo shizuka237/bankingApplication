@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="src.tests.bankingAppTests.accountTests.BankAccountTests" time="0.183" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="13"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/singhesg/code/bankingApplication/target/test-classes:/Users/singhesg/code/bankingApplication/target/classes:/Users/singhesg/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.2.0/junit-jupiter-engine-5.2.0.jar:/Users/singhesg/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/singhesg/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar:/Users/singhesg/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar:/Users/singhesg/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar:/Users/singhesg/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.2.0/junit-jupiter-api-5.2.0.jar:/Users/singhesg/.m2/repository/org/junit/platform/junit-platform-runner/1.2.0/junit-platform-runner-1.2.0.jar:/Users/singhesg/.m2/repository/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar:/Users/singhesg/.m2/repository/org/junit/platform/junit-platform-suite-api/1.2.0/junit-platform-suite-api-1.2.0.jar:/Users/singhesg/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/singhesg/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="13"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/singhesg/code/bankingApplication/target/surefire/surefirebooter10682785576187477669.jar /Users/singhesg/code/bankingApplication/target/surefire 2020-05-17T20-21-23_656-jvmRun1 surefire16658081422135309018tmp surefire_01962272731993026653tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/singhesg/code/bankingApplication/target/test-classes:/Users/singhesg/code/bankingApplication/target/classes:/Users/singhesg/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.2.0/junit-jupiter-engine-5.2.0.jar:/Users/singhesg/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/singhesg/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar:/Users/singhesg/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar:/Users/singhesg/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar:/Users/singhesg/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.2.0/junit-jupiter-api-5.2.0.jar:/Users/singhesg/.m2/repository/org/junit/platform/junit-platform-runner/1.2.0/junit-platform-runner-1.2.0.jar:/Users/singhesg/.m2/repository/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar:/Users/singhesg/.m2/repository/org/junit/platform/junit-platform-suite-api/1.2.0/junit-platform-suite-api-1.2.0.jar:/Users/singhesg/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/singhesg/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/singhesg"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-01-14"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/singhesg/code/bankingApplication"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/singhesg/code/bankingApplication/target/surefire/surefirebooter10682785576187477669.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="13.0.2+8"/>
+    <property name="user.name" value="singhesg"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="US-ASCII"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/singhesg/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/sj/rdqr6q390wx2_1f5t5vvpqs5671pz0/T/"/>
+    <property name="java.version" value="13.0.2"/>
+    <property name="user.dir" value="/Users/singhesg/code/bankingApplication"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/singhesg/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="N/A"/>
+    <property name="java.vm.version" value="13.0.2+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="57.0"/>
+  </properties>
+  <testcase name="getMiniStatement" classname="src.tests.bankingAppTests.accountTests.BankAccountTests" time="0.076"/>
+  <testcase name="getMinimumBalance" classname="src.tests.bankingAppTests.accountTests.BankAccountTests" time="0"/>
+  <testcase name="getInterestRate" classname="src.tests.bankingAppTests.accountTests.BankAccountTests" time="0"/>
+  <testcase name="depositException" classname="src.tests.bankingAppTests.accountTests.BankAccountTests" time="0"/>
+  <testcase name="depositSuccess" classname="src.tests.bankingAppTests.accountTests.BankAccountTests" time="0"/>
+  <testcase name="withDrawException" classname="src.tests.bankingAppTests.accountTests.BankAccountTests" time="0.001"/>
+  <testcase name="getTransactionsHistory1" classname="src.tests.bankingAppTests.accountTests.BankAccountTests" time="0.022"/>
+  <testcase name="getTransactionsHistory" classname="src.tests.bankingAppTests.accountTests.BankAccountTests" time="0.026"/>
+  <testcase name="withDrawSuccess" classname="src.tests.bankingAppTests.accountTests.BankAccountTests" time="0"/>
+  <testcase name="getCurrentBalance" classname="src.tests.bankingAppTests.accountTests.BankAccountTests" time="0"/>
+</testsuite>

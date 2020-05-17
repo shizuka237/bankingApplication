@@ -1,5 +1,3 @@
-package src.bankingApp.main.java;
-
 import src.bankingApp.account.AccountTypes;
 import src.bankingApp.office.HeadOffice;
 
@@ -12,6 +10,7 @@ public class MainTests {
         office.createBranch();
 
         office.displayAllBranch();
+
         office.getBranchById("BRANCH-1").createBankAccount("PAN-1", AccountTypes.CURRENT, 100.0);
         office.getBranchById("BRANCH-1").createBankAccount("PAN-1", AccountTypes.CURRENT, 100.0);
         office.getBranchById("BRANCH-2").createBankAccount("PAN-1", AccountTypes.SAVINGS, 100.0);

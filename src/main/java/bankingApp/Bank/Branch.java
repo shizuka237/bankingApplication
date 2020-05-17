@@ -32,6 +32,7 @@ public class Branch {
         Branch.globalBranchCount = new AtomicInteger(0);
     }
 
+
     public void createBankAccount(String panNumber, AccountTypes accountType, Double minimumBalance)
             throws UnsupportedAccountTypeException{
         //Add customer to branch if not already present
