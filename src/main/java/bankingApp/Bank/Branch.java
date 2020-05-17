@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Branch {
-    private static AtomicInteger globalBranchCount  = new AtomicInteger(0);//atomic because we want branchIds to be unique
+    private static AtomicInteger globalBranchCount = new AtomicInteger(0);;//atomic because we want branchIds to be unique
     private static Integer DEFAULT_ANNUAL_INTEREST_RATE = 6;
     private static String BRANCH_PREFIX = "BRANCH-";
 
@@ -26,6 +26,10 @@ public class Branch {
         this.branchId = BRANCH_PREFIX + ((Integer)globalBranchCount.incrementAndGet()).toString();
         this.bankAccounts = new HashMap<>();//  replaced list with hashmap, keeping in mind use case
         this.customers = new HashMap<>();// replaced list with hashmap, keeping in mind use case
+    }
+
+    public static void resetGlobalCount(){
+        Branch.globalBranchCount = new AtomicInteger(0);
     }
 
     public void createBankAccount(String panNumber, AccountTypes accountType, Double minimumBalance)
@@ -61,9 +65,9 @@ public class Branch {
     O(1) time fetch
      */
     public Customer getCustomerByPan(String pan)
-            throws BranchExecption{
+            throws BranchException {
         if(customers.get(pan) == null) {
-            throw new BranchExecption(String.format(ExceptionMessages.CUSTOMER_PAN_NOT_FOUND, pan));
+            throw new BranchException(String.format(ExceptionMessages.CUSTOMER_PAN_NOT_FOUND, pan));
         }
         return customers.get(pan);
     }
@@ -72,9 +76,9 @@ public class Branch {
    O(1) time fetch
     */
     public BankAccount getAccountByAccountNumber(String accNumber)
-            throws BranchExecption{
+            throws BranchException {
         if(this.bankAccounts.get(accNumber) == null) {
-            throw new BranchExecption(String.format(ExceptionMessages.CUSTOMER_ACCOUNT_NOT_FOUND, accNumber));
+            throw new BranchException(String.format(ExceptionMessages.CUSTOMER_ACCOUNT_NOT_FOUND, accNumber));
         }
         return bankAccounts.get(accNumber);
     }
@@ -91,6 +95,13 @@ public class Branch {
                 System.out.println("    ACCT NO: "+ account.getAccountNumber() + ", TYPE: " + account.getType() + ", CURRENT BALANCE: " + account.getCurrentBalance());
             }
         }
+    }
+
+    public void printAllAccountsOnly(){
+        for(Map.Entry<String, BankAccount> entry: this.bankAccounts.entrySet()){
+                BankAccount account = entry.getValue();
+                System.out.println("    ACCT NO: "+ entry.getKey() + ", TYPE: " + account.getType() + ", CURRENT BALANCE: " + account.getCurrentBalance());
+            }
     }
 
 

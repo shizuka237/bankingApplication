@@ -9,7 +9,7 @@ import src.bankingApp.transactions.TransactionException;
 
 import static org.junit.Assert.*;
 
-public class BankAccountTest {
+public class BankAccountTests {
 
     private BankAccount bankAccount;
 

@@ -16,7 +16,7 @@ Abstract class to represent a bank account
  */
 public abstract class BankAccount {
 
-    private static AtomicInteger globalAccounts = new AtomicInteger(0);
+    private static AtomicInteger globalAccounts = new AtomicInteger(0);;
     final private String accountNumber;//final because account no cannot change once set, it is its unique identifier
     private double minimumBalance;
     private double currentBalance;
@@ -37,6 +37,9 @@ public abstract class BankAccount {
         this.type = type;
     }
 
+    public  static void resetGlobalCount(){
+        globalAccounts = new AtomicInteger(0);
+    }
 
     /*
     * synchronized because we dont want any two parallal transactions to have same transaction ids
