@@ -64,3 +64,7 @@ mvn package
 java -jar target/BankingApp-1.0-SNAPSHOT.jar
 
 ```
+
+
+
+![SAMPLE RUN ](https://github.com/shizuka237/bankingApplication/blob/master/bakingSample.png)
